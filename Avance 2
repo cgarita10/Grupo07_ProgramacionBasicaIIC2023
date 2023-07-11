@@ -1,0 +1,53 @@
+#while condicion: 
+while True: 
+     #paso para #while condicion: 
+while True: 
+     #paso para seleccionar la opcion a usar del algortimo 
+     opcion = int(input("Bienvenid@ al casino en linea DreamWorld Casino \n Si es su primera vez como usuario, \n por favor digite 1 en el siguiente menu. \n o seleccione la opcion que desea utilizar?\n 1- Registro de nuevo usuario \n 2- Ingreso de usuario \n 3- DreamWorld Casino \n 4- Configuracion Avazada \n 5- Salir\n")) 
+     #tercer paso del algoritmo
+     #Opcion 1, crear usuario y password
+     if opcion == 1:
+         import getpass
+         attemps = 0
+        
+         while attemps < 3:
+            username = input('Enter your username: ')
+            password = getpass.getpass('Enter your password: ')
+
+            if username == 'user123' and password == 'password123':
+                 print('You have successfully logged in.')
+                 
+            else:
+                 print('Incorrect credentials. Check if you have Caps lock on and try again.')
+            attemps += 1
+            break
+            continue
+     #Opcion 2, ingresar su usuario y password
+     elif opcion == 2: 
+         import getpass
+         attemps = 0
+        
+         while attemps < 3:
+            username = input('Enter your username: ')
+            password = getpass.getpass('Enter your password: ')
+
+            if username == 'user123' and password == 'password123':
+                 print('You have successfully logged in.')
+                 
+            else:
+                 print('Incorrect credentials. Check if you have Caps lock on and try again.')
+            attemps += 1
+            break
+            continue
+     #Opcion 3, entrar al casino
+     elif opcion == 3: 
+         print()
+     #Opcion 4, trabajar y revisar la configuracion avanzada
+     elif opcion == 4: 
+         print()
+     #Opcion 5, salir del menu
+     elif opcion == 5: 
+         print("Gracias por usar nuestros servicios")
+         break 
+     else: 
+         print("Opcion invalida, intentelo nuevamente!")
